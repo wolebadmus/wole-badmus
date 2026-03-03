@@ -61,29 +61,39 @@ export default function Home() {
                   </div>
 
                   <div className="space-y-3 text-slate-600 leading-relaxed text-sm">
-                    <p>Most industrial operations don&apos;t lose money in catastrophic failure. They lose it in normalization. Minor stops. Recurring adjustments. Chronic operator intervention. PM tasks completed, yet the same components fail again. Throughput that never quite reaches nameplate — but no one can isolate the constraint.</p>
+                    <p>Most industrial operations don&apos;t lose money in catastrophic failure.</p>
+                    <p>They lose it in normalization.</p>
+                    <p>Minor Stops.</p>
+                    <p>Recurring adjustments.</p>
+                    <p>Chronic operator intervention.</p>
+                    <p>Throughput that never quite reaches nameplate.</p>
+                    <p>Operational and maintenance effort that increases, yet structural behaviour remains unchanged.</p>
+
+                    <p>The issue is rarely effort.</p>
+
+                    <p>It is structural misalignment between asset behaviour, operational consistency, maintenance architecture, and capital decision logic.</p>
+
+                    <p>When misalignment persists, organizations compensate with:</p>
+
+                    <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Incremental capital upgrades </span></li>
+                    <p>Incremental capital upgrades</p>
+                    <p>Vendor-driven solutions</p>
+                    <p>Increased maintenance spend</p>
+                    <p>Operational workarounds</p>
+
+                    <p>Instead of structural correction.</p>
 
                     <p className="text-teal-700 font-semibold">This is the money leak.</p>
 
-                    <p className="font-medium text-slate-700">Globally:</p>
+                    <p>In many cases, independent system-level analysis reveals recoverable throughput and cost stability before new capital is deployed.</p>
 
-                    <ul className="space-y-2">
-                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Unplanned downtime consumes <strong className="text-slate-900">5–20%</strong> of productive capacity annually.</span></li>
-                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Maintenance represents <strong className="text-slate-900">15–40%</strong> of operating cost in asset-intensive industries.</span></li>
-                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Reactive maintenance can cost <strong className="text-slate-900">3–5 times more</strong> than planned intervention when lost production is factored in.</span></li>
-                    </ul>
+                    <p>Capacity recovery is often more economical than capital expansion - if failure drivers are ranked early and execution priorities are sequenced correctly.</p>
 
-                    <p>In environments where capital approval cycles are slow, FX volatility impacts spare procurement, and aging assets dominate — such as many manufacturing sites across West Africa — the impact compounds.</p>
+                    <p>Until then, the system continues to leak.</p>
 
-                    <p className="text-slate-900 font-medium">But the deeper issue is not maintenance effort. It is structural misalignment.</p>
+                    <p>Quietly.</p>
 
-                    <ul className="space-y-1">
-                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>PM programs disconnected from component behavior</span></li>
-                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Downtime data lacking diagnostic clarity</span></li>
-                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Spare strategy not tied to risk ranking</span></li>
-                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Equipment constraints masked as operational variability</span></li>
-                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Capital decisions made before existing capacity is fully recovered</span></li>
-                    </ul>
+            
                   </div>
                 </div>
               </div>
