@@ -45,7 +45,7 @@ export default function Home() {
                 <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-none mb-1">Wole Badmus</h1>
                 <p className="text-base text-slate-500 mb-5">Industrial Capacity & Performance Strategist</p>
 
-                <p className="mt-4 text-sm text-slate-500 max-w-xl">
+                <p className="mt-4 mb-10 text-sm text-slate-500 max-w-xl">
   A brief overview of my background, operating philosophy, and system-level approach to structural capacity recovery.
 </p>
 
