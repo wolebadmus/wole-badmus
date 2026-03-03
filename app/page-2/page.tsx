@@ -37,216 +37,193 @@ export default function Page2() {
       </header>
 
       {/* Main Content - Single Card */}
-      <main className="max-w-7xl mx-auto px-8 py-12 md:py-16 relative z-10">
-        <div className="bg-white rounded-3xl shadow-lg shadow-slate-200/50 border border-slate-100 p-8 md:p-16">
+      <main className="max-w-[1600px] mx-auto px-4 py-4 md:py-6 relative z-10">
+        <div className="bg-white rounded-2xl shadow-lg shadow-slate-200/50 border border-slate-100 p-5 md:p-8">
 
-          {/* Hero Section */}
-          <section className="pb-16 border-b border-slate-100">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-12">
-              {/* Left - Name & Title */}
-              <div className="flex-1">
-                <p className="text-teal-600 text-sm font-medium tracking-wider uppercase mb-4">Industrial Strategist</p>
-                <h1 className="text-5xl md:text-7xl font-bold text-slate-900 leading-tight mb-4">
-                  Wole<br />Badmus
-                </h1>
-                <p className="text-xl text-slate-500">
-                  Industrial Capacity &<br />Performance Strategist
-                </p>
+          {/* Hero Section with Money Leak below title, Photo on right */}
+          <section className="pb-6 border-b border-slate-100">
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
+              {/* Left - Name, Title & Money Leak */}
+              <div className="flex-1 order-1">
+                {/* Name & Title */}
+                <p className="text-teal-600 text-sm font-medium tracking-wider uppercase mb-1">Industrial Strategist</p>
+                <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-none mb-1">Wole Badmus</h1>
+                <p className="text-base text-slate-500 mb-5">Industrial Capacity & Performance Strategist</p>
+
+                {/* Money Leak Section - Hidden on mobile, shown on desktop */}
+                <div className="hidden lg:block">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-6 h-0.5 bg-teal-500"></div>
+                    <h2 className="text-sm font-semibold text-slate-900 tracking-wider uppercase">
+                      The Money Leak Most Industrial Organizations Normalize
+                    </h2>
+                  </div>
+
+                  <div className="space-y-3 text-slate-600 leading-relaxed text-sm">
+                    <p>Most industrial operations don&apos;t lose money in catastrophic failure. They lose it in normalization. Minor stops. Recurring adjustments. Chronic operator intervention. PM tasks completed, yet the same components fail again. Throughput that never quite reaches nameplate — but no one can isolate the constraint.</p>
+
+                    <p className="text-teal-700 font-semibold">This is the money leak.</p>
+
+                    <p className="font-medium text-slate-700">Globally:</p>
+
+                    <ul className="space-y-2">
+                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Unplanned downtime consumes <strong className="text-slate-900">5–20%</strong> of productive capacity annually.</span></li>
+                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Maintenance represents <strong className="text-slate-900">15–40%</strong> of operating cost in asset-intensive industries.</span></li>
+                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Reactive maintenance can cost <strong className="text-slate-900">3–5 times more</strong> than planned intervention when lost production is factored in.</span></li>
+                    </ul>
+
+                    <p>In environments where capital approval cycles are slow, FX volatility impacts spare procurement, and aging assets dominate — such as many manufacturing sites across West Africa — the impact compounds.</p>
+
+                    <p className="text-slate-900 font-medium">But the deeper issue is not maintenance effort. It is structural misalignment.</p>
+
+                    <ul className="space-y-1">
+                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>PM programs disconnected from component behavior</span></li>
+                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Downtime data lacking diagnostic clarity</span></li>
+                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Spare strategy not tied to risk ranking</span></li>
+                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Equipment constraints masked as operational variability</span></li>
+                      <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Capital decisions made before existing capacity is fully recovered</span></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
               {/* Right - Photo */}
-              <div className="shrink-0 relative">
-                <div className="absolute -inset-3 bg-teal-100 rounded-2xl -rotate-3"></div>
-                <Image
-                  src="/placeholder.png"
-                  alt="Wole Badmus"
-                  width={450}
-                  height={450}
-                  className="relative rounded-2xl"
-                  priority
-                />
+              <div className="w-full lg:w-auto shrink-0 self-start order-2 flex justify-center lg:justify-start mb-8 lg:mb-0 lg:ml-8 px-4 lg:px-0">
+                <div className="relative">
+                  <div className="absolute -inset-3 bg-teal-100 rounded-2xl -rotate-3"></div>
+                  <Image
+                    src="/placeholder.png"
+                    alt="Wole Badmus"
+                    width={380}
+                    height={380}
+                    className="relative rounded-2xl"
+                    priority
+                  />
+                </div>
+              </div>
+
+              {/* Money Leak Section - Mobile only, shown after photo */}
+              <div className="lg:hidden order-3">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-6 h-0.5 bg-teal-500"></div>
+                  <h2 className="text-sm font-semibold text-slate-900 tracking-wider uppercase">
+                    The Money Leak Most Industrial Organizations Normalize
+                  </h2>
+                </div>
+
+                <div className="space-y-3 text-slate-600 leading-relaxed text-sm">
+                  <p>Most industrial operations don&apos;t lose money in catastrophic failure. They lose it in normalization. Minor stops. Recurring adjustments. Chronic operator intervention. PM tasks completed, yet the same components fail again. Throughput that never quite reaches nameplate — but no one can isolate the constraint.</p>
+
+                  <p className="text-teal-700 font-semibold">This is the money leak.</p>
+
+                  <p className="font-medium text-slate-700">Globally:</p>
+
+                  <ul className="space-y-2">
+                    <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Unplanned downtime consumes <strong className="text-slate-900">5–20%</strong> of productive capacity annually.</span></li>
+                    <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Maintenance represents <strong className="text-slate-900">15–40%</strong> of operating cost in asset-intensive industries.</span></li>
+                    <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Reactive maintenance can cost <strong className="text-slate-900">3–5 times more</strong> than planned intervention when lost production is factored in.</span></li>
+                  </ul>
+
+                  <p>In environments where capital approval cycles are slow, FX volatility impacts spare procurement, and aging assets dominate — such as many manufacturing sites across West Africa — the impact compounds.</p>
+
+                  <p className="text-slate-900 font-medium">But the deeper issue is not maintenance effort. It is structural misalignment.</p>
+
+                  <ul className="space-y-1">
+                    <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>PM programs disconnected from component behavior</span></li>
+                    <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Downtime data lacking diagnostic clarity</span></li>
+                    <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Spare strategy not tied to risk ranking</span></li>
+                    <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Equipment constraints masked as operational variability</span></li>
+                    <li className="flex gap-2"><span className="text-teal-400 shrink-0">*</span><span>Capital decisions made before existing capacity is fully recovered</span></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </section>
 
-          {/* Section 1: The Money Leak */}
-          <section className="py-16 border-b border-slate-100">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-0.5 bg-teal-500"></div>
-              <h2 className="text-sm font-semibold text-slate-900 tracking-wider uppercase">
-                The Money Leak Most Industrial Organizations Normalize
-              </h2>
-            </div>
+          {/* Money Leak Continued + Why Independent Analysis */}
+          <section className="py-6 border-b border-slate-100">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+              {/* Left - Organizational Response */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-6 h-0.5 bg-teal-500"></div>
+                  <h2 className="text-sm font-semibold text-slate-900 tracking-wider uppercase">
+                    Organizational Response
+                  </h2>
+                </div>
+                <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
+                  <p>When these misalignments persist, organizations compensate with:</p>
+                  <ul className="space-y-2">
+                    <li className="flex gap-2"><span className="text-teal-400">*</span>Incremental capital upgrades</li>
+                    <li className="flex gap-2"><span className="text-teal-400">*</span>Vendor-driven solutions</li>
+                    <li className="flex gap-2"><span className="text-teal-400">*</span>Increased maintenance spend</li>
+                    <li className="flex gap-2"><span className="text-teal-400">*</span>Operational workarounds</li>
+                  </ul>
+                  <p>Instead of structural correction.</p>
+                  <p>In many cases, independent system-level analysis reveals recoverable throughput and cost stability before new capital is deployed. Capacity recovery is often more economical than capital expansion — if failure drivers are exposed early and execution priorities are sequenced correctly.</p>
+                  <p className="italic text-slate-500 border-l-2 border-teal-300 pl-4">
+                    Until then, the system continues to leak. Quietly. And consistently.
+                  </p>
+                </div>
+              </div>
 
-            <div className="space-y-6 text-slate-600 leading-relaxed">
-              <p>
-                Most industrial operations don&apos;t lose money in catastrophic failure. They lose it in normalization. Minor stops. Recurring adjustments. Chronic operator intervention. PM tasks completed, yet the same components fail again. Throughput that never quite reaches nameplate — but no one can isolate the constraint.
-              </p>
-
-              <p className="text-teal-700 font-semibold text-lg">This is the money leak.</p>
-
-              <p className="font-medium text-slate-700">Globally:</p>
-
-              <ul className="space-y-4">
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Unplanned downtime consumes <strong className="text-slate-900">5–20%</strong> of productive capacity annually.</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Maintenance represents <strong className="text-slate-900">15–40%</strong> of operating cost in asset-intensive industries.</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Reactive maintenance can cost <strong className="text-slate-900">3–5 times more</strong> than planned intervention when lost production is factored in.</p>
-                </li>
-              </ul>
-
-              <p>
-                In environments where capital approval cycles are slow, FX volatility impacts spare procurement, and aging assets dominate — such as many manufacturing sites across West Africa — the impact compounds.
-              </p>
-
-              <p className="text-slate-900 font-medium">
-                But the deeper issue is not maintenance effort. It is structural misalignment.
-              </p>
-
-              <ul className="space-y-3">
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>PM programs disconnected from component behavior</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Downtime data lacking diagnostic clarity</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Spare strategy not tied to risk ranking</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Equipment constraints masked as operational variability</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Capital decisions made before existing capacity is fully recovered</p>
-                </li>
-              </ul>
-
-              <p>
-                When these misalignments persist, organizations compensate with:
-              </p>
-
-              <ul className="space-y-3">
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Incremental capital upgrades</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Vendor-driven solutions</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Increased maintenance spend</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Operational workarounds</p>
-                </li>
-              </ul>
-
-              <p>Instead of structural correction.</p>
-
-              <p>
-                In many cases, independent system-level analysis reveals recoverable throughput and cost stability before new capital is deployed. Capacity recovery is often more economical than capital expansion — if failure drivers are exposed early and execution priorities are sequenced correctly.
-              </p>
-
-              <p className="italic text-slate-500 border-l-2 border-teal-300 pl-4">
-                Until then, the system continues to leak. Quietly. And consistently.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 2: Why Independent Analysis */}
-          <section className="py-16 border-b border-slate-100">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-0.5 bg-teal-500"></div>
-              <h2 className="text-sm font-semibold text-slate-900 tracking-wider uppercase">
-                Why Independent System-Level Analysis Matters
-              </h2>
-            </div>
-
-            <div className="space-y-6 text-slate-600 leading-relaxed">
-              <p>
-                Internal teams are optimized for daily execution under pressure. Few are structured to step back and redesign the system architecture itself — to align maintenance structure, asset behavior, throughput constraints, and capital decisions into a single performance strategy.
-              </p>
-
-              <div className="bg-teal-50 border border-teal-100 rounded-xl p-6">
-                <p className="text-teal-800 font-medium">
-                  That is where structural capacity recovery begins.
-                </p>
+              {/* Right - Why Independent Analysis */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-6 h-0.5 bg-teal-500"></div>
+                  <h2 className="text-sm font-semibold text-slate-900 tracking-wider uppercase">
+                    Why Independent System-Level Analysis Matters
+                  </h2>
+                </div>
+                <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
+                  <p>Internal teams are optimized for daily execution under pressure. Few are structured to step back and redesign the system architecture itself — to align maintenance structure, asset behavior, throughput constraints, and capital decisions into a single performance strategy.</p>
+                  <div className="bg-teal-50 border border-teal-100 rounded-xl p-4">
+                    <p className="text-teal-800 font-medium">That is where structural capacity recovery begins.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
 
-          {/* Section 3: Background */}
-          <section className="pt-16">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-0.5 bg-teal-500"></div>
-              <h2 className="text-sm font-semibold text-slate-900 tracking-wider uppercase">Background</h2>
-            </div>
+          {/* Background */}
+          <section className="pt-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+              {/* Left - Background */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-6 h-0.5 bg-teal-500"></div>
+                  <h2 className="text-sm font-semibold text-slate-900 tracking-wider uppercase">Background</h2>
+                </div>
+                <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
+                  <p>Wole Badmus specializes in structural capacity recovery within material handling systems — including filling, dosing, conveying, packaging systems & automation, solids handling, and maintenance & reliability architecture.</p>
+                  <p>He operates at the intersection of equipment mechanics, maintenance structure, throughput economics, and capital decision discipline — identifying where system behavior, not personnel performance, is silently limiting output and inflating cost.</p>
+                  <p>His industrial experience spans complex manufacturing environments including <strong className="text-slate-900">ExxonMobil</strong>, <strong className="text-slate-900">BASF</strong>, <strong className="text-slate-900">Schwan&apos;s Company</strong>, <strong className="text-slate-900">Igloo Products</strong>, and multi-site operations across North America and West Africa. He has led and supported revamp and retrofit initiatives exceeding <strong className="text-slate-900">$200M in capital scope</strong> and developed component-based preventive maintenance frameworks across high-speed filling, solids handling, and packaging systems.</p>
+                </div>
+              </div>
 
-            <div className="space-y-6 text-slate-600 leading-relaxed">
-              <p>
-                Wole Badmus specializes in structural capacity recovery within material handling systems — including filling, dosing, conveying, packaging systems & automation, solids handling, and maintenance & reliability architecture.
-              </p>
-
-              <p>
-                He operates at the intersection of equipment mechanics, maintenance structure, throughput economics, and capital decision discipline — identifying where system behavior, not personnel performance, is silently limiting output and inflating cost.
-              </p>
-
-              <p>
-                His industrial experience spans complex manufacturing environments including <strong className="text-slate-900">ExxonMobil</strong>, <strong className="text-slate-900">BASF</strong>, <strong className="text-slate-900">Schwan&apos;s Company</strong>, <strong className="text-slate-900">Igloo Products</strong>, and multi-site operations across North America and West Africa. He has led and supported revamp and retrofit initiatives exceeding <strong className="text-slate-900">$200M in capital scope</strong> and developed component-based preventive maintenance frameworks across high-speed filling, solids handling, and packaging systems.
-              </p>
-
-              <p className="font-medium text-slate-700">His work focuses on:</p>
-
-              <ul className="space-y-3">
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Ranking failure drivers by measurable production impact</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Recovering hidden capacity before capital expansion decisions</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Converting task-based PM programs into component-driven reliability structures</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Aligning spare parts strategy with operational risk and procurement realities</p>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-teal-400 shrink-0">*</span>
-                  <p>Sequencing execution priorities to stabilize throughput and deter unnecessary capital</p>
-                </li>
-              </ul>
-
-              <p>
-                Rather than treating reliability as a maintenance function alone, his approach integrates system diagnostics, performance stabilization, and capital governance into a single structured recovery strategy.
-              </p>
-
-              <p>
-                Wole holds a <strong className="text-slate-900">master&apos;s degree in Subsea & Mechanical Engineering</strong> and has taught engineering at the <strong className="text-slate-900">University of Houston</strong> and <strong className="text-slate-900">Indiana State University</strong>. His perspective on structural workforce participation and industrial competitiveness was referenced in <strong className="text-slate-900">The New York Times</strong> in &ldquo;The Vanishing Male Worker: How America Fell Behind.&rdquo;
-              </p>
+              {/* Right - Focus Areas */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-6 h-0.5 bg-teal-500"></div>
+                  <h2 className="text-sm font-semibold text-slate-900 tracking-wider uppercase">Focus Areas</h2>
+                </div>
+                <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
+                  <ul className="space-y-2">
+                    <li className="flex gap-2"><span className="text-teal-400">*</span>Ranking failure drivers by measurable production impact</li>
+                    <li className="flex gap-2"><span className="text-teal-400">*</span>Recovering hidden capacity before capital expansion decisions</li>
+                    <li className="flex gap-2"><span className="text-teal-400">*</span>Converting task-based PM programs into component-driven reliability structures</li>
+                    <li className="flex gap-2"><span className="text-teal-400">*</span>Aligning spare parts strategy with operational risk and procurement realities</li>
+                    <li className="flex gap-2"><span className="text-teal-400">*</span>Sequencing execution priorities to stabilize throughput and deter unnecessary capital</li>
+                  </ul>
+                  <p>Rather than treating reliability as a maintenance function alone, his approach integrates system diagnostics, performance stabilization, and capital governance into a single structured recovery strategy.</p>
+                  <p>Wole holds a <strong className="text-slate-900">master&apos;s degree in Subsea & Mechanical Engineering</strong> and has taught engineering at the <strong className="text-slate-900">University of Houston</strong> and <strong className="text-slate-900">Indiana State University</strong>. His perspective on structural workforce participation and industrial competitiveness was referenced in <strong className="text-slate-900">The New York Times</strong> in &ldquo;The Vanishing Male Worker: How America Fell Behind.&rdquo;</p>
+                </div>
+              </div>
             </div>
           </section>
 
           {/* Thank You */}
-          <section className="text-center pt-16">
+          <section className="text-center pt-6 pb-2">
             <p className="text-slate-400 text-sm">Thank you for visiting.</p>
           </section>
 
@@ -254,8 +231,8 @@ export default function Page2() {
       </main>
 
       {/* Footer */}
-      <footer className="py-6 relative z-10">
-        <div className="max-w-7xl mx-auto px-8 text-center">
+      <footer className="py-3 relative z-10">
+        <div className="max-w-[1600px] mx-auto px-4 text-center">
           <p className="text-xs text-slate-400">© {new Date().getFullYear()} Wole Badmus</p>
         </div>
       </footer>
