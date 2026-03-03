@@ -89,7 +89,7 @@ export default function Home() {
               {/* Right - Photo */}
               <div className="w-full lg:w-auto shrink-0 self-start order-2 flex justify-center lg:justify-start mb-8 lg:mb-0 lg:ml-8 px-4 lg:px-0">
                 <div className="relative">
-                  <div className="absolute -inset-3 bg-teal-100 rounded-2xl -rotate-3"></div>
+
                   <Image
                     src="/placeholder.png"
                     alt="Wole Badmus"
